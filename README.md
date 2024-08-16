@@ -1,5 +1,10 @@
 # Rabraghib Tribute
 
+## Hosting
+
+This project is hosted on GitHub Pages. You can view it [here](https://mar1shell.github.io/Rabraghib-Tribute/).
+
+
 ## Overview
 
 **Rabraghib Tribute** is a fun and lighthearted project created as a tribute to a friend, Rabya Raghib. This project demonstrates the use of HTML and CSS to build a responsive, satirical tribute page. The page is designed to celebrate Rabya's fictional achievements and humorous qualities, showcasing skills and creativity with web design.
