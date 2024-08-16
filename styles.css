@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #eee;
+    width: 98%;
+    margin: auto;
+}
+
+.div {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0%;
+    font-family: 'Lora', serif;
+}
+
+li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+li:hover {
+    transform: scale(1.1); /* Scale the list item */
+}
+
+hr {
+    border: 1px solid black;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}  
+
+h2:hover + hr {
+    transform: scaleX(1.2); /* Scale the width */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Header */
+
+.bar {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.bar p {
+    flex-grow: 2;
+    font-size: large;
+    font-weight: bold;
+}
+.bar a {
+    flex-grow: 1;
+    transition: font-size 0.3s ease, font-weight 0.3s ease; /* Smooth transition */
+    justify-self: center;
+}
+
+.bar a:hover {
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .bar p{
+        font-size: 1em;
+    }
+
+    .bar a {
+        font-size: 0.8em;
+    }
+}
+
+/* Main */
+
+.main-div {
+    padding-top: 70px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-div h2 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+figure {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.main-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    filter: grayscale(90%);
+    opacity: 0.8;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.main-img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* testimonials */
+
+#testimonials {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    margin-top: -50px;
+}
+
+#testimonials img {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    border: 1px solid black;    
+    align-self: center;
+    opacity: 0.8;
+    filter: grayscale(90%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#testimonials img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#testimonials-header {
+    padding-top: 60px;
+    margin-bottom: 0%;
+}
+
+#rb1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+#rb2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+#p1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+}
+
+#p2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+}
+
+@media screen and (max-width: 600px) {
+    #testimonials {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    #testimonials img {
+        width: 90%;
+        height: auto;
+        justify-self: center;
+    }
+
+    #testimonials-header {
+        padding-top: 0;
+    }
+
+    #rb1, #p1, #rb2, #p2 {
+        grid-column: 1 / -1; /* Span the entire single column */
+        grid-row: auto; /* Let the rows auto adjust */
+    }
+    
+}
+
+#quote {
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-style: italic;
+    text-align: center;
+}
+
+#quote p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#quote footer {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    font-style: normal; /* Normal style for the attribution */
+}
+
+/* arrow */
+
+#arrow {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+#arrow img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+#arrow:hover {
+    transform: scale(1.2); /* Scale the arrow */
+}
