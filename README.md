@@ -49,4 +49,4 @@ A special shoutout to my friend Rabya Raghib! Check out his GitHub profile: [rab
 
 ---
 
-<p style="text-align: center;">Created with &#10084;&#65039; by mar1shell </p>
+<p align="center">Created with &#10084;&#65039; by mar1shell </p>
